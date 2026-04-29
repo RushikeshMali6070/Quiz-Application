@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quiz Application</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<div id="home" class="card">
+  <h1>Quiz Application</h1>
+  <p>Select a Sheet</p>
+
+  <div class="sheet-box">
+    <button onclick="startQuiz(0)">Sheet 1</button>
+    <button onclick="startQuiz(1)">Sheet 2</button>
+    <button onclick="startQuiz(2)">Sheet 3</button>
+    <button onclick="startQuiz(3)">Sheet 4</button>
+    <button onclick="startQuiz(4)">Sheet 5</button>
+  </div>
+</div>
+
+<!-- Quiz -->
+<div id="quiz" class="card hidden">
+
+  <div class="top">
+    <span id="progress"></span>
+    <span id="score">⭐ 0</span>
+    <span id="totalTimer">05:00</span>
+  </div>
+
+  <div class="progress-bar">
+    <div id="bar"></div>
+  </div>
+
+  <div class="timer-circle" id="timerCircle">10</div>
+
+  <h2 id="question"></h2>
+
+  <div id="options" class="options"></div>
+
+</div>
+
+<div id="resultBox" class="card hidden">
+  <h1>🎉 Test Completed</h1>
+  <h2 id="result"></h2>
+  <button onclick="location.reload()">Restart</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

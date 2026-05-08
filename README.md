@@ -35,5 +35,3 @@ Learning Outcomes:
 - Used Web Speech API for voice interaction
 - Designed responsive UI using CSS
 
-Author
-Rushikesh Mali
